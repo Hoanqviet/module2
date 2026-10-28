@@ -1,5 +1,7 @@
-package ss4;
+package ss4.bt1;
+
 import java.util.Scanner;
+
 public class RunApp {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -10,17 +12,15 @@ public class RunApp {
         double c = scanner.nextDouble();
 
         QuadraticEquation ptrinh = new QuadraticEquation(a, b, c);
+        ptrinh.gpt();
+        ptrinh.gpt();
 
-        double delta = ptrinh.getDiscriminant();
+        //
+        int x = 3;
+        int y = 3;
+        int z = 3;
+        QuadraticEquation ptrinh2 = new QuadraticEquation(a, b, c);
+        ptrinh2.gpt();
 
-        if (delta > 0) {
-            System.out.println("pt co 2 nghiem: " + ptrinh.getN1() + " va " + ptrinh.getN2());
-        } else if (delta == 0) {
-            System.out.println("pt co 1 nghiem " + ptrinh.getN1());
-        } else {
-            System.out.println("pt k co nghiem");
-        }
-
-        scanner.close();
     }
-    }
+}

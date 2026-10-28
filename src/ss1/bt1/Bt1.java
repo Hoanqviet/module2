@@ -1,6 +1,6 @@
-package ss1;
+package ss1.bt1;
 import java.util.Scanner;
-public class bt1 {
+public class Bt1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("nhap ten cua ban: ");
