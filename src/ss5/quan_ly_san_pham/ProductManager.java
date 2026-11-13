@@ -16,11 +16,11 @@ public class ProductManager {
         int choice;
         do {
             System.out.println("Quan Ly San Pham");
-            System.out.println("1. Thêm mới");
-            System.out.println("2. Hiển thị danh sách");
-            System.out.println("3. Cập nhật thông tin sản phẩm");
-            System.out.println("4. Xóa sản phẩm");
-            System.out.println("5. Thoát");
+            System.out.println("1.Thêm mới");
+            System.out.println("2.Hiển thị danh sách");
+            System.out.println("3.Cập nhật thông tin sản phẩm");
+            System.out.println("4.Xóa sản phẩm");
+            System.out.println("5.Thoát");
             System.out.print("Chọn chức năng: ");
 
             choice = Integer.parseInt(scanner.nextLine());
@@ -66,7 +66,7 @@ public class ProductManager {
     }
 
     public static void readProducts() {
-        System.out.println("\nDanh Sách Sản Phẩm");
+        System.out.println("Danh Sách Sản Phẩm");
         if (productList.isEmpty()) {
             System.out.println("Danh sách sản phẩm đang trống");
             return;
@@ -77,7 +77,7 @@ public class ProductManager {
     }
 
     public static void updateProduct() {
-        System.out.println("\nCập nhật sản phẩm");
+        System.out.println("Cập nhật sản phẩm");
         System.out.print("Nhập ID sản phẩm cần cập nhật: ");
         int id = Integer.parseInt(scanner.nextLine());
 
@@ -94,11 +94,11 @@ public class ProductManager {
 
         product.setName(newName);
         product.setPrice(newPrice);
-        System.out.println("Cập nhật thông tin sản phẩm thành công!");
+        System.out.println("Cập nhật thông tin sản phẩm thành công");
     }
 
     public static void deleteProduct() {
-        System.out.println("\n--- XÓA SẢN PHẨM ---");
+        System.out.println("Xóa sản phẩm");
         System.out.print("Nhập ID sản phẩm cần xóa: ");
         int id = Integer.parseInt(scanner.nextLine());
 
@@ -109,7 +109,7 @@ public class ProductManager {
         }
 
         productList.remove(product);
-        System.out.println("Xóa sản phẩm thành công!");
+        System.out.println("Xóa sản phẩm thành công");
     }
 
     private static Product findProductById(int id) {
