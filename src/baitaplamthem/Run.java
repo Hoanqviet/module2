@@ -99,8 +99,6 @@ public class Run {
             System.out.println("Loại phương tiện không đúng");
         }
     }
-
-    // YÊU CẦU 2: Hiển thị phương tiện
     private static void hienThiPhuongTien() {
         System.out.println("\nCHỌN LOẠI PHƯƠNG TIỆN CẦN HIỂN THỊ");
         System.out.println("1.Hiện thị xe tải");
